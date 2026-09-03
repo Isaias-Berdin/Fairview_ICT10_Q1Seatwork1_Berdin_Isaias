@@ -32,12 +32,33 @@ display(type(seven_days_of_the_week), target="div1")
 
 display("Get to know me!", target="div2") #this display will also show the leading text along with the target (div2). these will show the actual value of the data types, just in a different div
 
-display(">-Name:-<", name)
-display(">Current Age:<", age)
-display(">Height (in cm):<", height)
-display(">Countries I wanna visit:<", countries_i_wanna_visit[0], countries_i_wanna_visit[1], countries_i_wanna_visit[2])
+display(f"Name: {name}")
+display(f"Current Age: {age}")
+display(f"Height (in cm): ")
+display(f"Countries I wanna visit:  {countries_i_wanna_visit}")
 display(">Am I a new student in OBMC?:<", student_type)
 display(">Favorite color, dream car, shoe size, best friend:<")
 display(extras["color"], extras["car_brand"], extras["shoe_size"], extras["best_friend"])
 display(">Favorite Fruits:<", fav_fruits)
 display(">My favorite day of the week:<", seven_days_of_the_week[5])
+
+#operations -- the two variables will end up with a result depending on which type of operation you use.
+def add_a_number_yuh(e):
+    document.getElementById("output1").innerHTML = "" #clears prev result
+    
+    num1 = float(document.getElementById("input1").value) # get input value
+    num2 = float(document.getElementById("input2").value) # get input value
+    result1 = num1 + num2 # "+" means addition
+    display(result1, target="output1") # displays output of combined variables
+    result2 = num1 - num2 # "-" means subtract
+    display(result2, target="output1") # displays output of combined variables
+    result3 = num1 * num2 # "*" means multiplication
+    display(result3, target="output1") # displays output of combined variables
+    result4 = num1 / num2 # "/" means floating point division
+    display(result4, target="output1") # displays output of combined variables
+    result5 = num1 // num2 # "//" means floor division (quotient is rounded down)
+    display(result5, target="output1") # displays output of combined variables
+    result6 = num1 % num2 # "%" means remainder
+    display(result6, target="output1") # displays output of combined variables
+    result7 = num1 ** num2 # "**" means exponentation
+    display(result7, target="output1") # displays output of combined variables
