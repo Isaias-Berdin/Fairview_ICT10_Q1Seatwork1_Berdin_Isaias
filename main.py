@@ -36,13 +36,13 @@ display(f"Name: {name}")
 display(f"Current Age: {age}")
 display(f"Height (in cm): ")
 display(f"Countries I wanna visit:  {countries_i_wanna_visit}")
-display(">Am I a new student in OBMC?:<", student_type)
-display(">Favorite color, dream car, shoe size, best friend:<")
+display(f"Am I a new student in OBMC?: {student_type}")
+display(f"Favorite color, dream car, shoe size, best friend:")
 display(extras["color"], extras["car_brand"], extras["shoe_size"], extras["best_friend"])
-display(">Favorite Fruits:<", fav_fruits)
-display(">My favorite day of the week:<", seven_days_of_the_week[5])
+display(f"Favorite Fruits: {fav_fruits}")
+display(f"My ranking of the days of the week (best to worst): {seven_days_of_the_week[5]}, {seven_days_of_the_week[6]}, {seven_days_of_the_week[0]}, {seven_days_of_the_week[4]}, {seven_days_of_the_week[2]}, {seven_days_of_the_week[3]}, {seven_days_of_the_week[1]} ")
 
-#operations -- the two variables will end up with a result depending on which type of operation you use.
+
 def add_a_number_yuh(e):
     document.getElementById("output1").innerHTML = "" #clears prev result
     
